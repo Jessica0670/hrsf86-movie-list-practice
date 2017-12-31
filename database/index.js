@@ -40,5 +40,5 @@ let selectAll = (cb) => {
 
 module.exports = {
 	selectAll: selectAll,
-	selectMovie: selectMovie
+	insertMovie: insertMovie
 }

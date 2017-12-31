@@ -18,6 +18,7 @@
     "express": "^4.16.2",
     "live-server": "^1.2.0",
     "mocha": "*",
+    "mysql": "^2.15.0",
     "nodemon": "^1.14.6",
     "react": "^16.1.0",
     "react-dev": "0.0.1",
