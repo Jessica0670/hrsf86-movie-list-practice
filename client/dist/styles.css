@@ -6,13 +6,14 @@ body {
 	list-style-type:none;
     /*margin-left: 45%;*/
     /*padding: 1%;*/
-    margin-left: 25%;
+    margin-left: 33%;
     border: 1px solid #858585;
 	text-align: center;
-	width: 50%;
+	width: 40%;
 	padding: 20px;
     box-shadow: 5px 10px 8px #888888;
     background-color: #fff;
+    margin-bottom: 6px;
 }
 
 #movieListItem:hover {
@@ -69,13 +70,13 @@ h1 {
 }
 
 .addMovieBar {
-	width: 250px;
+	width: 45%;
 	height: 20px;
 	border-radius: 5px;
 }
 
 .searchBar {
-	width: 250px;
+	width: 45%;
 	height: 20px;
 	border-radius: 5px;
 }
