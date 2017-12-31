@@ -20,12 +20,13 @@ class MovieList extends React.Component {
   //push movie to array in state
   addMovie(e) {
     //create new movie title with id 
-    let id = 6;
+    let id = Data.length;
     let newMovie = {
       title: e.val(),
-      id: id++
+      id: id+= 1
     }
     Data.push(newMovie);
+    this.setState({movies: Data})
     console.log('added movie', e.val(), Data)
   }
 
