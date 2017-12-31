@@ -3,7 +3,10 @@ import React from 'react';
 const MovieDetails = (props) => (
 	//props onclick = that movies data
  
-		<li id="movieListItem"><span  onClick={() => console.log(props.click())}>X</span>{props.movieData.title}</li>
+		<li id="movieListItem">
+		<span  onClick={() => console.log(props.click())}>X
+		</span>{props.movieData.title}
+		</li>
 
 )
 

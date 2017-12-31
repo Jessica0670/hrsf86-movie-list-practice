@@ -1,10 +1,10 @@
 import React from 'react';
 
 const AddMovie = (props) => (
-	<form id="addForm">
-		<input type='text' name='movieSearchBar' placeholder="Add movie here..."/>
-		<input type='submit' name='submitButton' value="Submit" />
-	</form>
+	<div>
+		<input type='text' className="addMovieBar" name='addMovieBar' placeholder="Add movie here..."/>
+		<input onClick={() => props.click($('.addMovieBar'))} type='submit' name='submitButton' value="Submit" />
+	</div>
 )
 
 export default AddMovie;
