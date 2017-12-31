@@ -25,12 +25,12 @@ h1 {
 	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
 }
 
-#searchForm {
+#searchDiv {
 	margin-left: 43%;
 
 }
 
-#addForm {
+#addDiv {
 	margin-left: 43%;
 
 }
@@ -61,4 +61,31 @@ h1 {
 	padding: 20px;
     box-shadow: 5px 10px 8px #888888;
     background-color: #fff;
+}
+
+#img {
+	width: 15px;
+	padding-right: 10px;
+}
+
+.addMovieBar {
+	width: 250px;
+	height: 20px;
+	border-radius: 5px;
+}
+
+.searchBar {
+	width: 250px;
+	height: 20px;
+	border-radius: 5px;
+}
+
+.submit {
+	height: 25px;
+	border-radius: 5px;
+}
+
+.submit:hover {
+	background-color: #e0d650;
+
 }
