@@ -11,7 +11,7 @@ class MovieList extends React.Component {
     super(props);
     //set initial state to unwatched
     this.state = {
-      watched: false,
+      watched: Data.watched,
       movies: [Data],
       search: ''
     }
@@ -30,7 +30,8 @@ class MovieList extends React.Component {
     let id = Data.length;
     let newMovie = {
       title: e.val(),
-      id: id+= 1
+      id: id+= 1,
+      watched: false
     }
     Data.push(newMovie);
     this.setState({movies: Data})
@@ -42,7 +43,7 @@ class MovieList extends React.Component {
   //toggle class if watched === true?
   // id= { this.state.watched === false ? "movieListItem" : "movieListItemWatched"}
   handleClick(e) {
-    console.log(Data, this.state)
+    console.log(Data, this.state.watched)
     ///////////////////////////////////////
     //change to each item vs entire array//
     ///////////////////////////////////////
