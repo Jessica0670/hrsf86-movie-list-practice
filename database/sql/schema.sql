@@ -1,8 +1,12 @@
-var movies = [
-  {title: 'Mean Girls'},
-  {title: 'Hackers'},
-  {title: 'The Grey'},
-  {title: 'Sunshine'},
-  {title: 'Ex Machina'},
-];
+CREATE DATABASE movieList;
+
+USE movieList;
+
+CREATE TABLE movies(
+	id INT NOT NULL	PRIMARY KEY AUTO_INCREMENT,
+	title TEXT(50) NOT NULL,
+	watched BOOLEAN NOT NULL DEFAULT 0
+)
+
+
 
