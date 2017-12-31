@@ -1,0 +1,30 @@
+body {
+	background-color: #e8e8e8;
+}
+
+#movieListItem {
+	list-style-type:none;
+    /*margin-left: 45%;*/
+    /*padding: 1%;*/
+    margin-left: 25%;
+    border: 1px solid #858585;
+	text-align: center;
+	width: 50%;
+	    padding: 20px;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: #fff;
+}
+
+h1 {
+	margin-left: 40%;
+}
+
+#searchForm {
+	margin-left: 43%;
+
+}
+
+#addForm {
+	margin-left: 43%;
+
+}
