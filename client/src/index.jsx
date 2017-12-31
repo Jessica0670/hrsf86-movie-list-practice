@@ -10,15 +10,18 @@ class MovieList extends React.Component {
     super(props);
     //set initial state to unwatched
     this.state = {
-      watched: false
+      watched: false,
+      movies: [Data.movies]
     }
 
   }
+  //handle added movie
+  //push movie to array in state
 
   //handle click of span to set state of watched to true
   //change css if watched
   handleClick(e) {
-    console.log('hi')
+    console.log('hi', e)
   }
 
   render() {
@@ -26,7 +29,7 @@ class MovieList extends React.Component {
       <div>
         <Search movieData={Data}/>
         <AddMovie movieData={Data}/>
-      	<Movie click={this.handleClick.bind(this)} movieData={Data}/>
+      	<Movie value={this.state.watched} click={this.handleClick.bind(this)} movieData={Data}/>
       
       </div>
     )
