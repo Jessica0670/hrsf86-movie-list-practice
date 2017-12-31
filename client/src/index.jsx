@@ -43,6 +43,9 @@ class MovieList extends React.Component {
   // id= { this.state.watched === false ? "movieListItem" : "movieListItemWatched"}
   handleClick(e) {
     console.log(Data, this.state)
+    ///////////////////////////////////////
+    //change to each item vs entire array//
+    ///////////////////////////////////////
     this.setState({watched: !this.state.watched})
   }
 
