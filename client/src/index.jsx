@@ -43,7 +43,7 @@ class MovieList extends React.Component {
   // id= { this.state.watched === false ? "movieListItem" : "movieListItemWatched"}
   handleClick(e) {
     console.log(Data, this.state)
-    this.setState({watched: true})
+    this.setState({watched: !this.state.watched})
   }
 
   render() {
