@@ -8,9 +8,12 @@ import AddMovie from './components/AddMovie.jsx';
 class MovieList extends React.Component {
   constructor(props) {
     super(props);
+    //set initial state to unwatched
 
   }
 
+  //handle click of span to set state of watched to true
+  //change css if watched
 
   render() {
     return (
