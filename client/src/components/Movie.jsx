@@ -5,6 +5,8 @@ const Movie = (props) => (
 	{
 		props.movieData.map(movie => {
 			return <MovieDetails 
+			className={props.className}
+			value={props.value}
 			click={props.click} 
 			movieData={movie} 
 			key={movie.id}/>

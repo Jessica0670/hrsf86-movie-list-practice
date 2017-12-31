@@ -12,10 +12,17 @@ class MovieList extends React.Component {
     //set initial state to unwatched
     this.state = {
       watched: false,
-      movies: [Data]
+      movies: [Data],
+      search: ''
     }
 
   }
+
+  //create search as letters are typed
+  search(e) {
+    console.log('searching')
+  }
+
   //handle added movie
   //push movie to array in state
   addMovie(e) {
@@ -42,7 +49,12 @@ class MovieList extends React.Component {
   render() {
     return (
       <div>
-        <Search movieData={Data}/>
+        <Search
+        value={this.state.search}
+        typing={this.search.bind(this)} 
+        movieData={Data}
+        />
+
         <AddMovie
           value={this.state.movies} 
           click={this.addMovie.bind(this)}
@@ -50,6 +62,7 @@ class MovieList extends React.Component {
         />
 
       	<Movie 
+          className={this.state.watched ? "watched" : "unwateched"}
           value={this.state.watched} 
           click={this.handleClick.bind(this)} 
           movieData={Data}
